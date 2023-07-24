@@ -8,12 +8,12 @@ from typing import Any, Dict, Optional, Tuple
 
 import passpy
 import requests
-import sh
+# import sh
 from cryptography.hazmat.backends import default_backend as crypto_default_backend
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
 from nacl import encoding, public
-from sh import git
+import git
 
 
 def encrypt_secret(public_key: str, secret_value: str) -> str:
